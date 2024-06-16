@@ -1,0 +1,11 @@
+.\main.o: main.cpp
+.\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\STM32F7xx.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f746xx.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm7.h
+.\main.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h
+.\main.o: C:\Users\angel\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h

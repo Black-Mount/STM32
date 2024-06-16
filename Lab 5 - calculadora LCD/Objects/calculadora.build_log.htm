@@ -1,0 +1,1061 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Santiago Montenegro, Universidad Militar, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Archivos generales PC\Documentos\Proyectos uVision\Lab 5 - calculadora LCD\calculadora.uvprojx
+Project File Date:  03/28/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Calculadora.cpp(5): warning: no previous extern declaration for non-static variable 'matriz' [-Wmissing-variable-declarations]
+int matriz[]={0x1EFF,0X1DFF,0X1BFF,0X17FF,0X0FFF};
+    ^
+Calculadora.cpp(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int matriz[]={0x1EFF,0X1DFF,0X1BFF,0X17FF,0X0FFF};
+^
+Calculadora.cpp(6): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+void delay(void) {
+     ^
+Calculadora.cpp(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay(void) {
+^
+static 
+Calculadora.cpp(9): warning: no previous extern declaration for non-static variable 'teclado' [-Wmissing-variable-declarations]
+int teclado[4][5]={
+    ^
+Calculadora.cpp(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int teclado[4][5]={
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'mil' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+    ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'c1' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+          ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'd1' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+               ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'u1' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                    ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'm1' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                         ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'm2' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                              ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'p1' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                   ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'p2' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                        ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'fila' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                             ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'columna' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                  ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'pos' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                          ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'posnum' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'posope' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                          ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'correr' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                                   ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'mp' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                                            ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'grafica' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                                                  ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(15): warning: no previous extern declaration for non-static variable 'caracter' [-Wmissing-variable-declarations]
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+                                                                                                             ^
+Calculadora.cpp(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int mil=0,c1=0,d1=0,u1=0,m1=0,m2=0,p1=0,p2=0,fila,columna,pos=0,posnum=0, posope=0,correr=0,mp=0, grafica=0, caracter=0;
+^
+Calculadora.cpp(16): warning: no previous extern declaration for non-static variable 'd' [-Wmissing-variable-declarations]
+int d=0,u=0,reboot=0;
+    ^
+Calculadora.cpp(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int d=0,u=0,reboot=0;
+^
+Calculadora.cpp(16): warning: no previous extern declaration for non-static variable 'u' [-Wmissing-variable-declarations]
+int d=0,u=0,reboot=0;
+        ^
+Calculadora.cpp(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int d=0,u=0,reboot=0;
+^
+Calculadora.cpp(16): warning: no previous extern declaration for non-static variable 'reboot' [-Wmissing-variable-declarations]
+int d=0,u=0,reboot=0;
+            ^
+Calculadora.cpp(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int d=0,u=0,reboot=0;
+^
+Calculadora.cpp(17): warning: no previous extern declaration for non-static variable 'num' [-Wmissing-variable-declarations]
+float num=0,op=1,error=0;
+      ^
+Calculadora.cpp(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float num=0,op=1,error=0;
+^
+Calculadora.cpp(17): warning: no previous extern declaration for non-static variable 'op' [-Wmissing-variable-declarations]
+float num=0,op=1,error=0;
+            ^
+Calculadora.cpp(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float num=0,op=1,error=0;
+^
+Calculadora.cpp(17): warning: no previous extern declaration for non-static variable 'error' [-Wmissing-variable-declarations]
+float num=0,op=1,error=0;
+                 ^
+Calculadora.cpp(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float num=0,op=1,error=0;
+^
+Calculadora.cpp(18): warning: no previous extern declaration for non-static variable 'registro' [-Wmissing-variable-declarations]
+int registro[16]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    ^
+Calculadora.cpp(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int registro[16]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+^
+Calculadora.cpp(19): warning: no previous extern declaration for non-static variable 'valor' [-Wmissing-variable-declarations]
+float valor[10]={0,0,0,0,0,0,0,0,0,0};
+      ^
+Calculadora.cpp(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float valor[10]={0,0,0,0,0,0,0,0,0,0};
+^
+Calculadora.cpp(20): warning: no previous extern declaration for non-static variable 'operacion' [-Wmissing-variable-declarations]
+int operacion[10]={0,0,0,0,0,0,0,0,0,0};
+    ^
+Calculadora.cpp(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int operacion[10]={0,0,0,0,0,0,0,0,0,0};
+^
+Calculadora.cpp(32): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        valor[posnum]=(u+10*d);
+                                     ~ ~^~~~~
+Calculadora.cpp(41): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+        valor[posnum]=(u+10*d);
+                     ~ ~^~~~~
+Calculadora.cpp(21): warning: no previous prototype for function 'clasificar' [-Wmissing-prototypes]
+void clasificar(){
+     ^
+Calculadora.cpp(21): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void clasificar(){
+^
+static 
+Calculadora.cpp(57): warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                        if(valor[x+1]==0){
+                           ~~~~~~~~~~^ ~
+Calculadora.cpp(71): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+                        valor[0]=sin(valor[0]*3.1416/180);
+                                ~^~~~~~~~~~~~~~~~~~~~~~~~
+Calculadora.cpp(71): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        valor[0]=sin(valor[0]*3.1416/180);
+                                     ^~~~~~~~~
+Calculadora.cpp(75): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+                        valor[0]=cos(valor[0]*3.1416/180);
+                                ~^~~~~~~~~~~~~~~~~~~~~~~~
+Calculadora.cpp(75): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        valor[0]=cos(valor[0]*3.1416/180);
+                                     ^~~~~~~~~
+Calculadora.cpp(79): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+                        valor[0]=tan(valor[0]*3.1416/180);
+                                ~^~~~~~~~~~~~~~~~~~~~~~~~
+Calculadora.cpp(79): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+                        valor[0]=tan(valor[0]*3.1416/180);
+                                     ^~~~~~~~~
+Calculadora.cpp(80): warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                        if(valor[0]==90){
+                           ~~~~~~~~^ ~~
+Calculadora.cpp(48): warning: no previous prototype for function 'operar' [-Wmissing-prototypes]
+void operar(){
+     ^
+Calculadora.cpp(48): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void operar(){
+^
+static 
+Calculadora.cpp(105): warning: no previous prototype for function 'Delay' [-Wmissing-prototypes]
+void Delay(int x){
+     ^
+Calculadora.cpp(105): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Delay(int x){
+^
+static 
+Calculadora.cpp(109): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(110): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(111): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= n1;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(111): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= n1;
+                             ~~ ^~
+Calculadora.cpp(113): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &= ~(1UL<<5); //RS = 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(114): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(116): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(119): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(120): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(121): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= n2;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(121): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= n2;
+                             ~~ ^~
+Calculadora.cpp(123): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &= ~(1UL<<5); //RS = 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(124): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(126): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(107): warning: no previous prototype for function 'confi_LCD' [-Wmissing-prototypes]
+void confi_LCD(int n1, int n2){
+     ^
+Calculadora.cpp(107): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void confi_LCD(int n1, int n2){
+^
+static 
+Calculadora.cpp(131): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(132): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(133): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= n1;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(133): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= n1;
+                             ~~ ^~
+Calculadora.cpp(135): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |= (1UL<<5); //RS = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(136): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(138): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(141): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(142): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(143): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= n2;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(143): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= n2;
+                             ~~ ^~
+Calculadora.cpp(145): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |= (1UL<<5); //RS = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(146): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(148): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(129): warning: no previous prototype for function 'write_LCD' [-Wmissing-prototypes]
+void write_LCD(int n1, int n2){
+     ^
+Calculadora.cpp(129): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void write_LCD(int n1, int n2){
+^
+static 
+Calculadora.cpp(153): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(154): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(155): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= 0; 
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(156): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= (1<<4);
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(158): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(161): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(162): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(163): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= 7; 
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(164): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= (1<<4);
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(166): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(151): warning: no previous prototype for function 'desp_pant' [-Wmissing-prototypes]
+void desp_pant(){
+     ^
+Calculadora.cpp(151): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void desp_pant(){
+^
+static 
+Calculadora.cpp(171): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(172): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(173): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= 0;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(175): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &= ~(1UL<<5); //RS = 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(176): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(178): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(181): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(182): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(183): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= 1;
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(185): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &= ~(1UL<<5); //RS = 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(186): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR |=(1UL<<4);   //E = 1
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(188): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(169): warning: no previous prototype for function 'clear_screen' [-Wmissing-prototypes]
+void clear_screen(){
+     ^
+Calculadora.cpp(169): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void clear_screen(){
+^
+static 
+Calculadora.cpp(195): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(196): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(197): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= 8+sa; 
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(197): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= 8+sa; 
+                             ~~ ~^~~
+Calculadora.cpp(198): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= (1<<4);
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(200): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(203): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(204): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(205): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= sb; 
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(205): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOC -> ODR |= sb; 
+                             ~~ ^~
+Calculadora.cpp(206): warning: use of old-style cast [-Wold-style-cast]
+                GPIOC -> ODR |= (1<<4);
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(208): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=~(1UL<<4);  //Enable 0
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(193): warning: no previous prototype for function 'camb_pos' [-Wmissing-prototypes]
+void camb_pos(int sa, int sb){
+     ^
+Calculadora.cpp(193): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void camb_pos(int sa, int sb){
+^
+static 
+Calculadora.cpp(211): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> ODR &=(1UL<<4);
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(212): warning: use of old-style cast [-Wold-style-cast]
+          GPIOC -> ODR &=(1UL<<5);
+          ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(210): warning: no previous prototype for function 'create_draw' [-Wmissing-prototypes]
+void create_draw(void){         
+     ^
+Calculadora.cpp(210): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void create_draw(void){         
+^
+static 
+Calculadora.cpp(310): warning: declaration shadows a local variable [-Wshadow]
+                        for(int x=0;x<16;x++){
+                                ^
+Calculadora.cpp(307): note: previous declaration is here
+        for(int x=0;x<pos;x++){         
+                ^
+Calculadora.cpp(329): warning: declaration shadows a local variable [-Wshadow]
+                                for(int x=0; x<=9; x++) {
+                                        ^
+Calculadora.cpp(307): note: previous declaration is here
+        for(int x=0;x<pos;x++){         
+                ^
+Calculadora.cpp(337): warning: declaration shadows a local variable [-Wshadow]
+                                        for(int x=0; x<=9; x++) {
+                                                ^
+Calculadora.cpp(307): note: previous declaration is here
+        for(int x=0;x<pos;x++){         
+                ^
+Calculadora.cpp(343): warning: declaration shadows a local variable [-Wshadow]
+        for(int x=0; x<=9; x++) {
+                ^
+Calculadora.cpp(307): note: previous declaration is here
+        for(int x=0;x<pos;x++){         
+                ^
+Calculadora.cpp(354): warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                if(error==0){
+                   ~~~~~^ ~
+Calculadora.cpp(357): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        mil=valor[0]/1000;
+                           ~~~~~~~~~^~~~~
+Calculadora.cpp(358): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        c1=(valor[0]-1000*mil)/100;
+                          ~~~~~~~~~~~~~~~~~~~~^~~~
+Calculadora.cpp(358): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        c1=(valor[0]-1000*mil)/100;
+                                    ~~~~~^~~~
+Calculadora.cpp(359): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        d1=(valor[0]-1000*mil-100*c1)/10;
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+Calculadora.cpp(359): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        d1=(valor[0]-1000*mil-100*c1)/10;
+                                             ~~~~^~~
+Calculadora.cpp(359): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        d1=(valor[0]-1000*mil-100*c1)/10;
+                                    ~~~~~^~~~
+Calculadora.cpp(360): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        u1=valor[0]-1000*mil-(100*c1)-(10*d1);
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+Calculadora.cpp(360): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=valor[0]-1000*mil-(100*c1)-(10*d1);
+                                                     ~ ~~^~~
+Calculadora.cpp(360): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=valor[0]-1000*mil-(100*c1)-(10*d1);
+                                            ~ ~~~^~~
+Calculadora.cpp(360): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=valor[0]-1000*mil-(100*c1)-(10*d1);
+                                   ~~~~~^~~~
+Calculadora.cpp(361): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        m1=(valor[0]-(100*c1)-(10*d1)-u1)*10;
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+Calculadora.cpp(361): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                                     ~^~
+Calculadora.cpp(361): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                             ~ ~~^~~
+Calculadora.cpp(361): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                    ~ ~~~^~~
+Calculadora.cpp(362): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                          ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+Calculadora.cpp(362): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                                       ~~~^~~
+Calculadora.cpp(362): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                                ~~~^~~~
+Calculadora.cpp(362): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                    ~ ~~~~~~^~~
+Calculadora.cpp(362): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                       ~ ~~~~~~^~~~
+Calculadora.cpp(362): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                        ~ ~~~~~~~~^~~~
+Calculadora.cpp(367): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        mil=-valor[0]/1000;
+                           ~~~~~~~~~~^~~~~
+Calculadora.cpp(368): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        c1=(-valor[0]-1000*mil)/100;
+                          ~~~~~~~~~~~~~~~~~~~~~^~~~
+Calculadora.cpp(368): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        c1=(-valor[0]-1000*mil)/100;
+                                     ~~~~~^~~~
+Calculadora.cpp(369): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        d1=(-valor[0]-1000*mil-100*c1)/10;
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+Calculadora.cpp(369): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        d1=(-valor[0]-1000*mil-100*c1)/10;
+                                              ~~~~^~~
+Calculadora.cpp(369): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        d1=(-valor[0]-1000*mil-100*c1)/10;
+                                     ~~~~~^~~~
+Calculadora.cpp(370): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        u1=-valor[0]-1000*mil-(100*c1)-(10*d1);
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+Calculadora.cpp(370): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=-valor[0]-1000*mil-(100*c1)-(10*d1);
+                                                      ~ ~~^~~
+Calculadora.cpp(370): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=-valor[0]-1000*mil-(100*c1)-(10*d1);
+                                             ~ ~~~^~~
+Calculadora.cpp(370): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        u1=-valor[0]-1000*mil-(100*c1)-(10*d1);
+                                    ~~~~~^~~~
+Calculadora.cpp(371): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        m1=(-valor[0]-(100*c1)-(10*d1)-u1)*10;
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+Calculadora.cpp(371): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(-valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                                      ~^~
+Calculadora.cpp(371): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(-valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                              ~ ~~^~~
+Calculadora.cpp(371): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m1=(-valor[0]-(100*c1)-(10*d1)-u1)*10;
+                                     ~ ~~~^~~
+Calculadora.cpp(372): warning: implicit conversion turns floating-point number into integer: 'float' to 'int' [-Wfloat-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                          ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+Calculadora.cpp(372): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                                        ~~~^~~
+Calculadora.cpp(372): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                                 ~~~^~~~
+Calculadora.cpp(372): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                                     ~ ~~~~~~^~~
+Calculadora.cpp(372): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                                        ~ ~~~~~~^~~~
+Calculadora.cpp(372): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+                        m2=(-valor[0]*100-(1000*mil*100)-(100*c1*100)-(100*d1*10)-u1*100-10*m1);
+                                         ~ ~~~~~~~~^~~~
+Calculadora.cpp(304): warning: no previous prototype for function 'mostrar' [-Wmissing-prototypes]
+void mostrar(){
+     ^
+Calculadora.cpp(304): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void mostrar(){
+^
+static 
+Calculadora.cpp(433): warning: use of old-style cast [-Wold-style-cast]
+                while(!(GPIOA->IDR & (1UL<<0))) {
+                        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(434): warning: use of old-style cast [-Wold-style-cast]
+                        if(!(GPIOA->IDR & (1UL<<0))) {
+                             ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(467): warning: use of old-style cast [-Wold-style-cast]
+                EXTI->PR|=0xFFFF;
+                ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(432): warning: no previous prototype for function 'EXTI0_IRQHandler' [-Wmissing-prototypes]
+        void EXTI0_IRQHandler(void){
+             ^
+Calculadora.cpp(432): note: declare 'static' if the function is not intended to be used outside of this translation unit
+        void EXTI0_IRQHandler(void){
+        ^
+        static 
+Calculadora.cpp(470): warning: use of old-style cast [-Wold-style-cast]
+                while(!(GPIOA->IDR & (1UL<<1))) {
+                        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(471): warning: use of old-style cast [-Wold-style-cast]
+                        if(!(GPIOA->IDR & (1UL<<1))) {
+                             ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(504): warning: use of old-style cast [-Wold-style-cast]
+                EXTI->PR|=0xFFFF;
+                ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(469): warning: no previous prototype for function 'EXTI1_IRQHandler' [-Wmissing-prototypes]
+        void EXTI1_IRQHandler(void){
+             ^
+Calculadora.cpp(469): note: declare 'static' if the function is not intended to be used outside of this translation unit
+        void EXTI1_IRQHandler(void){
+        ^
+        static 
+Calculadora.cpp(508): warning: use of old-style cast [-Wold-style-cast]
+                while(!(GPIOA->IDR & (1UL<<4))) {
+                        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(509): warning: use of old-style cast [-Wold-style-cast]
+                        if(!(GPIOA->IDR & (1UL<<4))) {
+                             ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(518): warning: use of old-style cast [-Wold-style-cast]
+                EXTI->PR|=0xFFFF;
+                ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(507): warning: no previous prototype for function 'EXTI4_IRQHandler' [-Wmissing-prototypes]
+        void EXTI4_IRQHandler(void){
+             ^
+Calculadora.cpp(507): note: declare 'static' if the function is not intended to be used outside of this translation unit
+        void EXTI4_IRQHandler(void){
+        ^
+        static 
+Calculadora.cpp(523): warning: use of old-style cast [-Wold-style-cast]
+                while((!(GPIOA->IDR & (1UL<<5)))||(!(GPIOA->IDR & (1UL<<6)))||(!(GPIOA->IDR & (1UL<<7)))){
+                         ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(523): warning: use of old-style cast [-Wold-style-cast]
+                while((!(GPIOA->IDR & (1UL<<5)))||(!(GPIOA->IDR & (1UL<<6)))||(!(GPIOA->IDR & (1UL<<7)))){
+                                                     ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(523): warning: use of old-style cast [-Wold-style-cast]
+                while((!(GPIOA->IDR & (1UL<<5)))||(!(GPIOA->IDR & (1UL<<6)))||(!(GPIOA->IDR & (1UL<<7)))){
+                                                                                 ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(524): warning: use of old-style cast [-Wold-style-cast]
+                if(!(GPIOA->IDR & (1UL<<5))) {
+                     ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(526): warning: use of old-style cast [-Wold-style-cast]
+                if(!(GPIOA->IDR & (1UL<<6))) {
+                     ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(528): warning: use of old-style cast [-Wold-style-cast]
+                if(!(GPIOA->IDR & (1UL<<7))) {
+                     ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(537): warning: use of old-style cast [-Wold-style-cast]
+                EXTI->PR|=0xFFFF;
+                ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(522): warning: no previous prototype for function 'EXTI9_5_IRQHandler' [-Wmissing-prototypes]
+        void EXTI9_5_IRQHandler(void){
+             ^
+Calculadora.cpp(522): note: declare 'static' if the function is not intended to be used outside of this translation unit
+        void EXTI9_5_IRQHandler(void){
+        ^
+        static 
+Calculadora.cpp(544): warning: use of old-style cast [-Wold-style-cast]
+        RCC->AHB1ENR=0X7;
+        ^~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(786): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+Calculadora.cpp(545): warning: use of old-style cast [-Wold-style-cast]
+        RCC->APB2ENR|=(1UL<<14);
+        ^~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(786): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+Calculadora.cpp(546): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->MODER|=0X1550000;
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(547): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->PUPDR=0X1555505;//0001 0101 0101 0101 0101 0000 0000
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(548): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC -> MODER |= 0X5555555;
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(560): warning: use of old-style cast [-Wold-style-cast]
+        EXTI->FTSR|=0xF3;
+        ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(561): warning: use of old-style cast [-Wold-style-cast]
+        EXTI->IMR|=0xF3;
+        ^~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(775): note: expanded from macro 'EXTI'
+#define EXTI                ((EXTI_TypeDef *) EXTI_BASE)
+                             ^                ~~~~~~~~~
+Calculadora.cpp(562): warning: use of old-style cast [-Wold-style-cast]
+        SYSCFG->EXTICR[0]=0x0000;
+        ^~~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+#define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+                             ^                  ~~~~~~~~~~~
+Calculadora.cpp(563): warning: use of old-style cast [-Wold-style-cast]
+        SYSCFG->EXTICR[1]=0x0000;
+        ^~~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(774): note: expanded from macro 'SYSCFG'
+#define SYSCFG              ((SYSCFG_TypeDef *) SYSCFG_BASE)
+                             ^                  ~~~~~~~~~~~
+Calculadora.cpp(542): warning: no previous prototype for function 'configura' [-Wmissing-prototypes]
+void configura(void) {
+     ^
+Calculadora.cpp(542): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void configura(void) {
+^
+static 
+Calculadora.cpp(579): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->ODR=matriz[i];
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Calculadora.cpp(579): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        GPIOA->ODR=matriz[i];
+                  ~^~~~~~~~~
+Calculadora.cpp(577): warning: no previous prototype for function 'control' [-Wmissing-prototypes]
+void control(void) {
+     ^
+Calculadora.cpp(577): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void control(void) {
+^
+static 
+Calculadora.cpp(589): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+192 warnings generated.
+compiling Calculadora.cpp...
+linking...
+Program Size: Code=12644 RO-data=828 RW-data=100 ZI-data=1848  
+FromELF: creating hex file...
+".\Objects\calculadora.axf" - 0 Error(s), 192 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/santi/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F401xx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xe.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

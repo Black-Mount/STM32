@@ -1,0 +1,1 @@
+void Dalay(int delaytimer);

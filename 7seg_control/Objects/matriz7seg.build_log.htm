@@ -1,0 +1,228 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Santiago Montenegro, Universidad Militar, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Archivos generales PC\Documentos\Proyectos uVision\7seg control\matriz7seg.uvprojx
+Project File Date:  02/03/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_stm32f4xx.c...
+assembling startup_stm32f401xe.s...
+Segmentos.cpp(3): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int i,x, dip;
+    ^
+Segmentos.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i,x, dip;
+^
+Segmentos.cpp(3): warning: no previous extern declaration for non-static variable 'x' [-Wmissing-variable-declarations]
+int i,x, dip;
+      ^
+Segmentos.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i,x, dip;
+^
+Segmentos.cpp(3): warning: no previous extern declaration for non-static variable 'dip' [-Wmissing-variable-declarations]
+int i,x, dip;
+         ^
+Segmentos.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i,x, dip;
+^
+Segmentos.cpp(4): warning: no previous extern declaration for non-static variable 'pasado' [-Wmissing-variable-declarations]
+int pasado=0,actual;
+    ^
+Segmentos.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int pasado=0,actual;
+^
+Segmentos.cpp(4): warning: no previous extern declaration for non-static variable 'actual' [-Wmissing-variable-declarations]
+int pasado=0,actual;
+             ^
+Segmentos.cpp(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int pasado=0,actual;
+^
+Segmentos.cpp(5): warning: no previous extern declaration for non-static variable 'numeros' [-Wmissing-variable-declarations]
+int numeros[]={0x3f0,0x060,0x5b0,0x4f0,0x660,0x6d0,0x7d0,0x070,0x7f0,0x6f0,0x770,0x7c0,0x390,0x5e0,0x790,0x710};
+    ^
+Segmentos.cpp(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int numeros[]={0x3f0,0x060,0x5b0,0x4f0,0x660,0x6d0,0x7d0,0x070,0x7f0,0x6f0,0x770,0x7c0,0x390,0x5e0,0x790,0x710};
+^
+Segmentos.cpp(8): warning: for loop has empty body [-Wempty-body]
+int delay(void){for(x=0; x<500000;x++);return 0;}//no modificar 
+                                      ^
+Segmentos.cpp(8): note: put the semicolon on a separate line to silence this warning
+Segmentos.cpp(8): warning: no previous prototype for function 'delay' [-Wmissing-prototypes]
+int delay(void){for(x=0; x<500000;x++);return 0;}//no modificar 
+    ^
+Segmentos.cpp(8): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int delay(void){for(x=0; x<500000;x++);return 0;}//no modificar 
+^
+static 
+Segmentos.cpp(12): warning: use of old-style cast [-Wold-style-cast]
+        RCC->AHB1ENR=0xF ;   //ENABLE CLK PORT A,B,C
+        ^~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(786): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+Segmentos.cpp(14): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->MODER=0;
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(15): warning: use of old-style cast [-Wold-style-cast]
+        GPIOB->MODER=0X155500; //Configuraci<F3>n pines B4 al B10 00,01, 01,01, 01,01, 01,01, 00,00, 00,00
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(15): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        GPIOB->MODER=0X155500; //Configuraci<F3>n pines B4 al B10 00,01, 01,01, 01,01, 01,01, 00,00, 00,00
+                                            ^
+Segmentos.cpp(16): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC->MODER=0005555;     //00,00 00,00 00,00 01,01 01,01 01,01 01,01 
+        ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(10): warning: no previous prototype for function 'configura' [-Wmissing-prototypes]
+int configura(void){
+    ^
+Segmentos.cpp(10): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int configura(void){
+^
+static 
+Segmentos.cpp(22): warning: use of old-style cast [-Wold-style-cast]
+        dip=GPIOA->IDR&0Xf;
+            ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(779): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(24): warning: use of old-style cast [-Wold-style-cast]
+        if(!(GPIOC->IDR &(1UL<<13))) //Se evalua si el pulsador esta activo en bajo
+             ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(781): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(40): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(40): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(45): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(45): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(50): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(50): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(59): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(59): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(64): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(64): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(69): warning: use of old-style cast [-Wold-style-cast]
+                GPIOB->ODR=numeros[i];
+                ^~~~~
+C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h(780): note: expanded from macro 'GPIOB'
+#define GPIOB               ((GPIO_TypeDef *) GPIOB_BASE)
+                             ^                ~~~~~~~~~~
+Segmentos.cpp(69): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                GPIOB->ODR=numeros[i];
+                          ~^~~~~~~~~~
+Segmentos.cpp(20): warning: no previous prototype for function 'control' [-Wmissing-prototypes]
+int control(void){
+    ^
+Segmentos.cpp(20): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int control(void){
+^
+static 
+Segmentos.cpp(88): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+30 warnings generated.
+compiling Segmentos.cpp...
+linking...
+Program Size: Code=1236 RO-data=436 RW-data=64 ZI-data=1648  
+FromELF: creating hex file...
+".\Objects\matriz7seg.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/santi/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/santi/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F401xx_OPT.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xe.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

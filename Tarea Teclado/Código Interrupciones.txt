@@ -1,0 +1,45 @@
+//	Javier Buitrago			Angela Hurtado			Miguel Cruz
+//          1803312						 1803168					1803288
+
+#include <stdio.h>
+#include "STM32F7xx.h"
+
+int main(void) {
+	
+	RCC->AHB1ENR |= 0X2;
+	RCC->APB2ENR |= 0X4000; //Habilita las interrupciones externas
+	
+	GPIOB->MODER = 0X10004001;
+	GPIOB->OTYPER = 0X0;
+	GPIOB->OSPEEDR = 0X10004001;
+	GPIOB->PUPDR = 0X10004001;
+	
+	SYSCFG->EXTICR[0] = 0X110; //Habilita el registro 1 de interrpuciones, PB1, PB2
+	SYSCFG->EXTICR[1] = 0X10; //Habilita el registro 2 de interrpuciones, PB5
+	EXTI->IMR = 0X26; //Define las interrupciones EXTI1 - EXTI2 - EXTI5
+	EXTI->RTSR = 0X22; //Establece las interrpuciones EXTI1 - EXTI5 en flanco de subida
+	EXTI ->FTSR = 0X4; //Establece las interrpuciones EXTI2 - EXTI5 en flanco de bajada
+	NVIC_EnableIRQ(EXTI1_IRQn); //Habilita EXTI1
+	NVIC_EnableIRQ(EXTI2_IRQn); //Habilita EXTI
+	NVIC_EnableIRQ(EXTI9_5_IRQn); //Habilita EXTI5
+	
+	while(true){
+		
+	}
+	
+}
+
+extern "C" {
+	void EXTI1_IRQHandler(void){
+		EXTI -> PR |= 0x2;
+		GPIOB->ODR ^= 0x1;
+	}
+	void EXTI2_IRQHandler(void){
+		EXTI -> PR |= 0x4;
+		GPIOB->ODR ^= 0x80;
+	}
+	void EXTI9_5_IRQHandler(void){
+		EXTI -> PR |= 0x20;
+		GPIOB->ODR ^= 0x4000;
+	}
+}
